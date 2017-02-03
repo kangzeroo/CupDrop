@@ -19,7 +19,7 @@ module.exports = function(app){
 
 	app.post('/new_receipt', Receipt.new_receipt)
 
-	app.post('/state_delivery', Delivery.state_delivery)
+	app.post('/start_delivery', Delivery.state_delivery)
 	app.post('/update_delivery', Delivery.update_delivery)
-	
+
 }
