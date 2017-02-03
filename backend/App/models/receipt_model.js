@@ -3,7 +3,11 @@ var mongoose = require('mongoose');
 
 // Create the Rental post Schema
 var ReceiptSchema = new mongoose.Schema({
-  
+  receipt_id: String,
+  customer_id: String,
+  delivery_id: String,
+  runner_id: String,
+  date: Date
 })
 
 ReceiptSchema.pre('save', function(next){
