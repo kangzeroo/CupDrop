@@ -3,14 +3,7 @@ var mongoose = require('mongoose');
 
 // Create the order Schema
 var OrderSchema = new mongoose.Schema({
-	order_id: String,
-	customer_id: String,
-	customer_name: String,													// custom id or facebook id
-	details: String,
-	time: Date,
-	gps: [Number],
-	price: Number,
-	created_at: Date
+	
 });
 
 OrderSchema.pre('save', function(next){
